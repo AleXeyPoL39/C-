@@ -7,7 +7,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 string range = Range(number);
 string result = range == null
             ? "Указана неверная четверть"
-            : $"Диапазон возможных координат точек в данной четверти ->  {range}";
+            : $"Диапазон возможных координат точек в данной четверти  {range}";
 Console.WriteLine(result);
 
 string Range(int num)
