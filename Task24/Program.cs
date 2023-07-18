@@ -8,6 +8,12 @@
 Console.WriteLine("Введите целое положительное число");
 int N = Convert.ToInt32(Console.ReadLine());
 
+if(N <= 0)
+{
+    Console.WriteLine("Некорректный ввод");
+    return;
+}
+
 int sumNumbers = SumNumbers(N);
 Console.WriteLine($"{N} -> {sumNumbers}");
 // Program.SumNumbers(number)
@@ -24,3 +30,4 @@ int SumNumbers(int num)
    }
    return sum;
 }
+
