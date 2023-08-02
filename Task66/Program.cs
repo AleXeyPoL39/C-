@@ -9,14 +9,20 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите целое натуральное число N");
 int n = Convert.ToInt32(Console.ReadLine());
 
+if (m > n)
+{
+Console.WriteLine("Неправильно заданы M и N");
+}
+else
+{
 int sum = SumNaturalNumbers(m, n) + n;
 Console.WriteLine($"Сумма натуральных чисел от {m} до {n}: {sum}");
+}
 
 static int SumNaturalNumbers(int start, int end)
 {
     if (start == end)
         return 0;
-    else 
+    else
         return start + SumNaturalNumbers(start + 1, end);
 }
-
